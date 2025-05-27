@@ -1,9 +1,11 @@
 from google import genai
 from google.genai import types
 from pydantic import BaseModel
+from dotenv import load_dotenv
+import os
+load_dotenv()
 
-# Replace with your actual Gemini API Key
-client = genai.Client(api_key='AIzaSyCU7wQ-di4WtNWv4EgCRlpClWf7rIFvDCQ')
+client = genai.Client(api_key=os.getenv("API_KEY"))
 
 class AdAnalysis(BaseModel):
    url: str 
