@@ -1,0 +1,8 @@
+requests
+beautifulsoup4
+google-genai
+streamlit
+asyncio
+pydantic
+playwright
+urllib
