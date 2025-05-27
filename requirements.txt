@@ -5,3 +5,4 @@ streamlit
 asyncio
 pydantic
 playwright
+dotenv
